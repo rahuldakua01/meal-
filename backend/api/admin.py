@@ -1,15 +1,15 @@
 from fastapi import APIRouter, Depends,Form,UploadFile,File
-from services.meal import create_breakfast,create_lunch,create_dinner
-from core.dependency import admin_requird,get_db
-from schemas.meal import MealCreate1,MealCreate2,MealCreate3
+from backend.services.meal import create_breakfast,create_lunch,create_dinner
+from backend.core.dependency import admin_requird,get_db
+from backend.schemas.meal import MealCreate1,MealCreate2,MealCreate3
 from sqlalchemy.orm import Session
 from typing import Optional
-from services.meal import update_breakfast,update_lunch,update_dinner
-from services.subscription_service import expire_subscriptions
-from services.admin_service import get_active_users
-from models.user import User
+from backend.services.meal import update_breakfast,update_lunch,update_dinner
+from backend.services.subscription_service import expire_subscriptions
+from backend.services.admin_service import get_active_users
+from backend.models.user import User
 from sqlalchemy import func
-from models.subscription import Subscription
+from backend.models.subscription import Subscription
 
 
 
