@@ -1,11 +1,11 @@
 from sqlalchemy.orm import Session
-from models.user import User
-from models.subscription import Subscription
+from backend.models.user import User
+from backend.models.subscription import Subscription
 from fastapi import HTTPException
-from core.security import get_hash_password,verify_password,create_access_token,token_access
-from schemas.user import UserRole
+from backend.core.security import get_hash_password,verify_password,create_access_token,token_access
+from backend.schemas.user import UserRole
 from datetime import timedelta
-from services.mail_service import send_verification_email
+from backend.services.mail_service import send_verification_email
 # from services.subscription_service import check_subscription
 
 
