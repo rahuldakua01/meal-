@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api import auth,admin,subscribe,menu,payment,plan
+from backend.api import auth,admin,subscribe,menu,payment,plan
 
 
 api_router = APIRouter()
