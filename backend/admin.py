@@ -1,7 +1,7 @@
-from db.session import SessionLocal, engine
-from db.base import Base
-from models.user import User
-from core.security import get_hash_password
+from backend.db.session import SessionLocal, engine
+from backend.db.base import Base
+from backend.models.user import User
+from backend.core.security import get_hash_password
 
 Base.metadata.create_all(bind=engine)
 
