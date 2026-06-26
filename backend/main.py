@@ -2,11 +2,11 @@ from fastapi import FastAPI,Depends,HTTPException
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from db.session import engine
-from db.base import Base
-from api.router import api_router
+from backend.db.session import engine
+from backend.db.base import Base
+from backend.api.router import api_router
 from sqlalchemy.orm import Session
-from core.dependency import get_db
+from backend.core.dependency import get_db
 # from services.user_service import verify_registered_user
 import os
 
