@@ -1,8 +1,8 @@
-from db.session import SessionLocal
+from backend.db.session import SessionLocal
 from fastapi import Depends,HTTPException
 from fastapi.security import HTTPAuthorizationCredentials,HTTPBearer
 from jose import jwt,JWTError
-from core.security import SECRET_KEY,ALGORITHM
+from backend.core.security import SECRET_KEY,ALGORITHM
 
 security = HTTPBearer()
 
