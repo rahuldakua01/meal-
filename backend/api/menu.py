@@ -1,7 +1,7 @@
 from fastapi import APIRouter,Depends
 from sqlalchemy.orm import Session
-from core.dependency import get_db
-from services.menu_service import get_today_menu,get_day_menu,get_weekly_menu
+from backend.core.dependency import get_db
+from backend.services.menu_service import get_today_menu,get_day_menu,get_weekly_menu
 
 
 router = APIRouter(prefix="/menu", tags=["Menu"])
