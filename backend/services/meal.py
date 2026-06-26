@@ -1,8 +1,8 @@
 from fastapi import HTTPException
-from core.dependency import user_requird
+from backend.core.dependency import user_requird
 from sqlalchemy.orm import Session
 import os
-from models.meal import Meal1,Meal2,Meal3
+from backend.models.meal import Meal1,Meal2,Meal3
 
 
 async def create_breakfast(day,name,catagory,calories,description,image,db:Session):
